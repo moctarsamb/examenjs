@@ -126,7 +126,6 @@ function change(ele) {
         }
     }
     if (reponse.toUpperCase() == "CHALEUR") {
-        alert("Trouve")
     }
 }
 function retour(ele){

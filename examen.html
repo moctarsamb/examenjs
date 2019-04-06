@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="exam1">
+			<div class="jeu">
+        <section class="menu">
+        <div class="imgmenu">
+            <div>
+                <h2 class="titre" id="titreJeu">Quatre Images Un Mot</h2>
+            </div>
+        </div>
+    </section>
+    <section class="mobile">
+        <div class="container-fluid">
+            <div class="divNiveau" style="padding: 20px 0"><span class="niveau">1</span></div>
+            <div class="image">
+                <table style="width: 350px" border="1">
+                    <tr>
+                        <td><img id="img1" class="img" src="images/1.png" width="160px"></td>
+                        <td><img id="img2" class="img" src="images/2.png" width="160px"></td>
+                    </tr>
+                    <tr>
+                        <td><img id="img3" class="img" src="images/3.png" width="160px"></td>
+                        <td><img id="img4" class="img" src="" width="160px"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="btn-group divLettre">
+        	<button onclick="retour(this)" type="button" id="lettre1" class="lettre" >C</button>
+        	<button onclick="retour(this)"type="button" id="lettre2" class="lettre" >_</button>
+        	<button onclick="retour(this)"type="button" id="lettre3" class="lettre" >A</button>
+        	<button onclick="retour(this)"type="button" id="lettre4" class="lettre" >_</button>
+        	<button onclick="retour(this)"type="button" id="lettre5" class="lettre" >E</button>
+        	<button onclick="retour(this)"type="button" id="lettre6" class="lettre" >U</button>
+        	<button onclick="retour(this)"type="button" id="lettre7" class="lettre" >R</button>
+        </div>
+        <div id="btn btnLettre">
+            <div class="btn-group">
+            <button type="button" onclick="change(this)" value="" id="1" class="btn btnLettre">H</button>
+            <button type="button" onclick="change(this)"value="" id="2" class="btn btnLettre">A</button>
+            <button type="button" onclick="change(this)"value="" id="3" class="btn btnLettre">U</button>
+            <button type="button" onclick="change(this)"value="" id="4" class="btn btnLettre">E</button>
+            <button type="button" onclick="change(this)"value="" id="5" class="btn btnLettre">L</button>
+            <button type="button" onclick="change(this)"value="" id="6" class="btn btnLettre">X</button>
+            </div>
+            <div class="btn-group">
+                <button type="button" onclick="change(this)"value="" id="7" class="btn btnLettre">C</button>
+                <button type="button" onclick="change(this)"value="" id="8" class="btn btnLettre">F</button>
+                <button type="button" onclick="change(this)"value="" id="9" class="btn btnLettre">R</button>
+                <button type="button" onclick="change(this)"value="" id="10" class="btn btnLettre">J</button>
+                <button type="button" onclick="change(this)"value="" id="11" class="btn btnLettre">P</button>
+                <button type="button" onclick="change(this)"value="" id="12" class="btn btnLettre">O</button>
+            </div>
+        </div>
+        <div class="btn-group" id="btnSuiv" style="display: none;">
+            <button type="button" value="" id="7" class="btnSuiv">Niveau suivant>></button>
+        </div>
+        <button onclick="effacer()" class="btnRset">reset</button>
+
+        
+        
+    </section>
+    </div>
+    		<a id="Exo2" href="#bas">Suivant</a>
+		</div>
+		<hr color="darkred" size="5">
+		<div class="exam2">
+			<h1>Instructions de l'Examen</h1>
+			<ol>
+				<li>Copier le dossier "Examen JS" sur votre bureau</li>
+				<li>Renommer le dossier "Examen JS" en "votreNom votePrenom votreClasse" Exemple : <span style="color:darkred;">DIAGNE Aicha L2BTS</span></li>
+			</ol>
+			<h2>Recommandations</h2>
+			<ul type="square">
+				<li>Prolonger la mise en veille ou Enlevez le mot de passe de votre ordinateur</li>
+				<li>Vous ne devez modifier que le fichier examen.js</li>
+				<li>Faites <code>Ctrl+S</code> avant de sortir de la salle d'examen</li>
+			</ul>
+		</div>
+	</div>
+	<div id="bas"></div>
+
+
+
+
+	<script src="examen.js"></script>
+</body>
+</html>
